@@ -22,9 +22,10 @@ const VideoDetails = ({video}) => {
          <div className='videoDescp'>
               <p 
               style={{fontSize: '2rem',
-                      lineHeight: '0.8rem',
-                      fontWeight: '600',
-                      whiteSpace:'normal'}}
+                      lineHeight: '2.5rem',
+                      fontWeight: '500',
+                      height:'20%'
+                     }}
                       >
                           {videoTitle}
                       </p>
