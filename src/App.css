@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header-wrapper{
+    width: 100%;
+    position: fixed;
+    padding: 0px 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.Navcontainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.icon-container{
+    width: 110px;
+    padding: 18px 14px 18px 16px;
+}
+.humburgerIcon{
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.youtubeImg{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.searchWrapper{
+    width: 39%;
+}
+.right{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    padding: 0px 8px;
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.icons:hover{
+    background-color: rgb(199, 197, 197);
+    border-radius: 90px;
+}
+.MainSection{
+    width: 80%;
+    margin-top: 95px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.videoPlayer{
+    width: 60%;
+}
+.videoListWrapper{
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videoListItem{
+    width: 402px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: row;
+}
+.listVideoImg{
+    width: 200px;
+    padding:5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.listVideoImg img{
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.videoListText{
+    font-size: 14px;
+    font-weight: 500;
+    /* height: 10px; */
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.videoDescp{
+    margin-top: 20px;
+    width: 640px;
+    /* background-color: aqua; */
 }
